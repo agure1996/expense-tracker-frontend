@@ -22,6 +22,8 @@ const Expense = () => {
   const [expenses, setExpenses] = useState([]);
   const [item, setItem] = useState(emptyItem);
   
+  
+  
   const fetchData = async () => {
     const responseCategory = await fetch('/api/v1/category/all');
     const body = await responseCategory.json();
@@ -33,8 +35,6 @@ const Expense = () => {
     setExpenses(bodyExpense);
     setIsLoading(false);
   };
-
-
   useEffect(() => {
     fetchData();
   }, []);
@@ -50,7 +50,11 @@ const Expense = () => {
       },
       body: JSON.stringify(item)
     });
+  
+     // Fetching the updated expense list after adding new expense
+    fetchData();
   };
+  
 
   const handleDropDownChange = (event) => {
     let val = event.target.value;
