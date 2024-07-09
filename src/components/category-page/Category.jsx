@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import HomeNavbar from "./HomeNavbar";
+import HomeNavbar from "../HomeNavbar";
 import { Form, FormGroup, Container, Button, Table, Input } from "reactstrap";
+import "./Category.css";
 
 const Category = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,7 +52,7 @@ const Category = () => {
     setCategories(updatedCategories);
   };
 
-  const title = <h3>Add new Category</h3>;
+  const title = <h3 className="category-heading">Add new Category</h3>;
 
   let rows = categories.map((category) => (
     <tr key={category.id}>
@@ -90,10 +91,11 @@ const Category = () => {
         </Container>
       </div>
       <Container>
-        <Table className="mt-4">
+        <Table className="mt-4 category-table">
           <thead>
             <tr>
               <th width="100%">Category</th>
+              <th width="10%">Action</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>

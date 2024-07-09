@@ -1,9 +1,12 @@
+/* Ensure consistent typography */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Center align content */
 .App {
   text-align: center;
-}
-.expense{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 85vh;
+  padding: 2rem;
 }

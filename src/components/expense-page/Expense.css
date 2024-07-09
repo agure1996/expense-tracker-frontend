@@ -1,0 +1,102 @@
+  
+  .expense-heading {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+  }
+  
+  
+  /* Container for expenses content */
+  .expense-container {
+    margin-top: 2rem;
+  }
+  
+  .expense-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .expense-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .expense-form input,
+  .expense-form select,
+  .expense-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .expense-list {
+    margin-top: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .expense-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .expense-list th,
+  .expense-list td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .expense-list th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .expense-list td {
+    vertical-align: middle;
+  }
+  
+  .expense-list .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .expense-list .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+
+  /* Add subtle animations */
+.transition {
+    transition: transform 0.3s ease;
+  }
+  
+  .transition:hover {
+    transform: translateY(-5px); /* Lift element on hover */
+  }
+  
+  /* Ensure accessibility with proper color contrast */
+  .button {
+    color: #fff;
+    background-color: #007bff;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
