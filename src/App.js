@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Category from './components/category-page/Category';
 import Expense from './components/expense-page/Expense'
-import NotFound from './components/NotFound';
+import NotFound from './components/not-found/NotFound';
 
 
 const App = () => {

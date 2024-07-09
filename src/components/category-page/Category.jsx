@@ -8,15 +8,18 @@ const Category = () => {
   const [categories, setCategories] = useState([]);
   const [newCategory, setNewCategory] = useState("");
 
+  const fetchCategories = async () => {
+    const response = await fetch("/api/v1/category/all");
+    const body = await response.json();
+    setCategories(body);
+    setIsLoading(false);
+  };
+
+  
   useEffect(() => {
-    const fetchCategories = async () => {
-      const response = await fetch("/api/v1/category/all");
-      const body = await response.json();
-      setCategories(body);
-      setIsLoading(false);
-    };
     fetchCategories();
   }, []);
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();

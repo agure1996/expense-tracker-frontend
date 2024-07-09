@@ -8,7 +8,7 @@
   }
   
   
-  /* Container for expenses content */
+  /* Expenses Container*/
   .expense-container {
     margin-top: 2rem;
   }
@@ -81,16 +81,15 @@
   }
   
 
-  /* Add subtle animations */
-.transition {
+ .transition {
     transition: transform 0.3s ease;
   }
   
   .transition:hover {
-    transform: translateY(-5px); /* Lift element on hover */
+    transform: translateY(-5px); 
   }
   
-  /* Ensure accessibility with proper color contrast */
+
   .button {
     color: #fff;
     background-color: #007bff;

@@ -1,0 +1,37 @@
+.not-found-page {
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f8f9fa; 
+  }
+  
+  /* heading */
+  .not-found-heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* lead paragraph */
+  .not-found-lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button */
+  .not-found-button {
+    color: #fff;
+    background-color: #c2c6ca;
+    border: 2px solid #c6cace; 
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+  }
+  
+  .not-found-button:hover {
+    background-color: #b3b5b8 !important;
+    border-color: #c3c3c4 !important;
+  }
+  
+  

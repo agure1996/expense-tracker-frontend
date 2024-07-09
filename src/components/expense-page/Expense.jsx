@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Expense.css'; // Import your CSS file
+import './Expense.css'; 
 import HomeNavbar from '../HomeNavbar';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -7,6 +7,7 @@ import { Form, FormGroup, Container, Button, Table } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 
+/* Default value */
 const Expense = () => {
   const emptyItem = {
     description: '',
@@ -20,7 +21,7 @@ const Expense = () => {
   const [categories, setCategories] = useState([]);
   const [expenses, setExpenses] = useState([]);
   const [item, setItem] = useState(emptyItem);
-
+  
   const fetchData = async () => {
     const responseCategory = await fetch('/api/v1/category/all');
     const body = await responseCategory.json();
